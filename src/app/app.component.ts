@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import {BookService} from "./book.service";
+import {Book} from "./models/book.model";
 
 @Component({
   selector: 'app-root',
@@ -6,5 +8,5 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'books-app';
+
 }

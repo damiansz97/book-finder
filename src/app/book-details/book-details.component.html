@@ -1,0 +1,6 @@
+<h3>Book Details</h3>
+<ng-container *ngIf="book">
+  <h6>{{book.title}}</h6>
+  <p [innerHTML]="book.description"></p>
+  <img [src]="book.imageUrl">
+</ng-container>

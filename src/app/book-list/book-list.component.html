@@ -1,0 +1,11 @@
+<input [(ngModel)]="searchQuery">
+<button (click)="handleSearch()">Szukaj</button>
+<ul *ngIf="!loading; else loadingIndicator">
+  <li *ngFor="let book of books" (click)="navigate(book)">{{
+    book.title
+    }}</li>
+</ul>
+<ng-template #loadingIndicator>
+  <mat-spinner></mat-spinner>
+</ng-template>
+
